@@ -4,7 +4,7 @@ from PIL import ImageTk,Image
 # Root
 root = Tk()
 root.title("My Code")
-root.iconbitmap('c:/Users/corru/OneDrive/Documents/Python/GUI')
+root.iconbitmap('')
 root.geometry("400x400")
 
 vert = Scale(root, from_=0, to=400)
