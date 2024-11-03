@@ -1,0 +1,24 @@
+from tkinter import *
+from PIL import ImageTk,Image
+
+# Root
+root = Tk()
+root.title("My Code")
+root.iconbitmap('c:/Users/corru/OneDrive/Documents/Python/GUI')
+root.geometry("400x400")
+
+vert = Scale(root, from_=0, to=400)
+vert.pack()
+
+def slideFeature():
+    theLabel = Label(root, text=horizon.get()).pack()
+    root.geometry(str(horizon.get()) + "x" + str(vert.get()))
+
+horizon = Scale(root, from_=0, to=400, orient=HORIZONTAL)
+horizon.pack()
+
+theLabel = Label(root, text=horizon.get()).pack()
+
+theButton = Button(root, text="Click", command=slideFeature).pack()
+
+root.mainloop()
